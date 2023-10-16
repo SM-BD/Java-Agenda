@@ -369,10 +369,8 @@ public class Main {
   public static void playMusic() {
     try {
       String musicFolder = System.getProperty("user.dir") + "/Music/";
-      Random rand = new Random();
-      int musicFileNumber = rand.nextInt(3) + 1;
       AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(
-        new File(musicFolder + musicFileNumber + ".wav").getAbsoluteFile()
+        new File(musicFolder+"2.wav").getAbsoluteFile()
       );
       Clip clip = AudioSystem.getClip();
       clip.open(audioInputStream);
